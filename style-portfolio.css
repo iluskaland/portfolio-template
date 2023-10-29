@@ -1,0 +1,17 @@
+/* MEDIA OVERWRITE AND NEW SETTINGS */
+@media screen and (max-width: 950px){
+    .main-title{
+        text-align: center;
+    }
+
+    .max-width{
+        max-width: 450px;
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .max-width{
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,41 @@
+/* MEDIA OVERWRITE AND NEW SETTINGS */
+@media screen and (max-width: 950px){
+    .main-title-large{
+        text-align: center;
+    }
+
+    .grid-system-2{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-system-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .small-card{
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 510px){
+    .max-width{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 950px) and (min-width: 377px){
+    .main-title-large{
+        font-size: 2rem;
+        text-align: center;  
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grid-system-4{
+        grid-template-columns: 1fr;
+    }
+
+    .small-card{
+        height: auto;
+    }
+}
