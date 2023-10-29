@@ -2,7 +2,7 @@
 
 A responsive portfolio website template that you can use to showcase your skills, projects, and future development plans. Feel free to use this template for your personal portfolio and customize it to suit your needs.
 
-![Project Demo](/assets/github-portfolio-template-demo.jpg)
+![Project Demo]/assets/github-portfolio-template-demo.jpg
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ This template is a responsive portfolio website that can be used by developers, 
 1. Clone this repository:
 
    ```bash
-   git clone (https://github.com/iluskaland/portfolio-template.git)
+   git clone https://github.com/iluskaland/portfolio-template.git
 
 ## Usage
 
@@ -48,6 +48,6 @@ Customize this template by modifying the HTML and CSS files to match your person
 
 ## Contact
 
-    GitHub: (https://github.com/iluskaland)
+    GitHub: https://github.com/iluskaland
 
 Feel free to reach out if you have any questions or feedback!
