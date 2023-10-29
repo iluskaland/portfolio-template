@@ -48,6 +48,6 @@ Customize this template by modifying the HTML and CSS files to match your person
 
 ## Contact
 
-    GitHub: (https://github.com/iluskaland)
+    [Github](https://github.com/iluskaland)
 
 Feel free to reach out if you have any questions or feedback!
