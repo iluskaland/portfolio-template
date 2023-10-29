@@ -2,7 +2,7 @@
 
 This is a responsive portfolio website project created strictly with HTML and CSS. It serves as a template to showcase one's skills, projects, and future development plans.
 
-![Project Demo](/assets/github-portfolio-template-demo.jpg)
+
 
 ## Table of Contents
 
