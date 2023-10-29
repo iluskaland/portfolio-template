@@ -12,6 +12,8 @@ A responsive portfolio website template that you can use to showcase your skills
 - [Usage](#usage)
 - [Customization](#customization)
 - [Example Portfolios](#example-portfolios)
+- [Contributing](#contributing)
+- [License](#license)
 - [Contact](#contact)
 
 ## About the Project
@@ -48,7 +50,38 @@ Customize this template by modifying the HTML and CSS files to match your person
 
 Check out this portfolio created using this template:
 
-1. [iluskaland-portfolio](https://iluskaland-portfolio.netlify.app/)) - A showcase of what you can achieve with this template.
+1. [iluskaland-portfolio](https://iluskaland-portfolio.netlify.app/) - A showcase of what you can achieve with this template.
+
+## Contributing
+
+I welcome contributions from the open-source community to improve and enhance this project. Whether you're a developer, designer, or someone with new ideas, your contributions are valuable. Here are some guidelines to get you started:
+
+### How to Contribute
+
+1. Fork this repository to your GitHub account.
+2. Clone the forked repository to your local machine.
+3. Create a new branch for your contribution:
+4. Make your changes and ensure they adhere to our code and style standards.
+5. Test your changes thoroughly.
+6. Commit your changes with a descriptive commit message.
+7. Push your changes to your GitHub repository.
+8. Create a Pull Request (PR) to my `main` branch.
+9. I will review your contribution, and once approved, it will be merged.
+
+### Code and Style Guidelines
+
+- Maintain a consistent coding style with the existing codebase.
+- Use only HTML and CSS for any contributions. Avoid introducing other languages or technologies.
+- Comment your code for clarity and documentation.
+- Ensure that your changes do not introduce errors or break existing features.
+
+### Reporting Issues
+
+If you encounter any issues, have ideas for improvements, or would like to request new features, please open an issue on this repository. I appreciate your feedback and will address your concerns as soon as possible.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contact
 
