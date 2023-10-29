@@ -1,8 +1,8 @@
 # Portfolio Website
 
-This is a responsive portfolio website project created strictly with HTML and CSS. It serves as a template to showcase one's skills, projects, and future development plans.
+A responsive portfolio website template that you can use to showcase your skills, projects, and future development plans. Feel free to use this template for your personal portfolio and customize it to suit your needs.
 
-
+![Project Demo](/assets/github-portfolio-template-demo.jpg)
 
 ## Table of Contents
 
@@ -18,13 +18,13 @@ This is a responsive portfolio website project created strictly with HTML and CS
 
 ## About the Project
 
-This project is a personal portfolio website that highlights my skills, provides details about the projects I've worked on, and outlines my future plans for skill development. It is a showcase of my abilities and serves as a platform for potential employers or collaborators to learn more about me.
+This template is a responsive portfolio website that can be used by developers, designers, or anyone who wants to showcase their skills and projects. It provides sections for an About Me page, a Skill Set page, a Portfolio page, and a future plans section.
 
 ## Project Structure
 
 - `index.html`: The main page of the portfolio website.
 - `about-me.html`: The about me page.
-- `skillset.html`: The skillset page.
+- `skill-set.html`: The skillset page.
 - `portfolio.html`: The portfolio page.
 - `style.css`: The main CSS file for styling.
 - `style-about-me.css`: CSS file specific to the about me page.
@@ -36,25 +36,18 @@ This project is a personal portfolio website that highlights my skills, provides
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone (https://github.com/iluskaland/portfolio-template.git)
 
 ## Usage
 
-To view the portfolio website, open the link in the description in a web browser (https://iluskaland.github.io/portfolio-template/index.html). You can navigate through different sections, including the About Me, Skill Set, and Portfolio pages.
+To view the portfolio website, open the link in the description in a web browser (https://iluskaland.github.io/portfolio-template/index.html). You can customize the content and styles to create your own portfolio website. Feel free to replace the content with your information and add your projects.
 
-## Skills demonstrated
+## Customization
 
-This project showcases the following technical skills:
-
-    HTML
-    CSS
-    Responsive Design
-    Font Integration
-    CSS Grid Layout
+Customize this template by modifying the HTML and CSS files to match your personal information, skills, and projects. You can change the colors, fonts, and layout to create a unique portfolio.
 
 ## Contact
 
-    Email: your@email.com
-    GitHub: YourGitHubProfile
+    GitHub: (https://github.com/iluskaland)
 
 Feel free to reach out if you have any questions or feedback!
