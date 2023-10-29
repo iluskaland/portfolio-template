@@ -33,14 +33,17 @@ This template is a responsive portfolio website that can be used by developers, 
 
 ## Getting Started
 
-1. Clone this repository:
+1. Fork this repository to your GitHub account by clicking the "Fork" button in the top right corner.
+2. Clone your forked repository to your local machine using the following command:
 
    ```bash
    git clone https://github.com/iluskaland/portfolio-template.git
 
+Now, you have your own fork of the repository, and you can make changes and contributions as described in the "Contributing" section.
+
 ## Usage
 
-To view the portfolio website, open the link in the description in a web browser (https://iluskaland.github.io/portfolio-template/index.html). You can customize the content and styles to create your own portfolio website. Feel free to replace the content with your information and add your projects.
+To view the live demonstration of this portfolio template, visit [this link](https://iluskaland.github.io/portfolio-template/index.html). You can customize the content and styles to create your own portfolio website. Feel free to replace the content with your information and add your projects.
 
 ## Customization
 
@@ -60,7 +63,7 @@ I welcome contributions from the open-source community to improve and enhance th
 
 1. Fork this repository to your GitHub account.
 2. Clone the forked repository to your local machine.
-3. Create a new branch for your contribution:
+3. Create a new branch for your contribution.
 4. Make your changes and ensure they adhere to our code and style standards.
 5. Test your changes thoroughly.
 6. Commit your changes with a descriptive commit message.
