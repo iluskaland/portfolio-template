@@ -10,10 +10,8 @@ A responsive portfolio website template that you can use to showcase your skills
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Future Plans](#future-plans)
-- [Contributing](#contributing)
-- [License](#license)
+- [Customization](#customization)
+- [Example Portfolios](#example-portfolios)
 - [Contact](#contact)
 
 ## About the Project
@@ -45,6 +43,12 @@ To view the portfolio website, open the link in the description in a web browser
 ## Customization
 
 Customize this template by modifying the HTML and CSS files to match your personal information, skills, and projects. You can change the colors, fonts, and layout to create a unique portfolio.
+
+## Example Portfolios
+
+Check out this portfolio created using this template:
+
+1. [iluskaland-portfolio](https://iluskaland-portfolio.netlify.app/)) - A showcase of what you can achieve with this template.
 
 ## Contact
 
