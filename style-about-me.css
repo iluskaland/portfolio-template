@@ -4,10 +4,6 @@
         text-align: center;
     }
 
-    .main-title{
-        text-align: center;
-    }
-
     .grid-system-2{
         grid-template-columns: 1fr;
     }
