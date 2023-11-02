@@ -14,6 +14,7 @@ A responsive portfolio website template that you can use to showcase your skills
 - [Example Portfolios](#example-portfolios)
 - [Contributing](#contributing)
 - [License](#license)
+- [Attribution](#attribution)
 - [Contact](#contact)
 
 ## About the Project
@@ -85,6 +86,10 @@ If you encounter any issues, have ideas for improvements, or would like to reque
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Attribution (Appreciated, but Not Required)
+
+I've put a lot of effort into creating this portfolio template, and I'm thrilled if you find it useful for your personal projects. While it's not mandatory, I would greatly appreciate it if you could consider providing attribution to the original source. This could be a simple note in your website's footer or a dedicated "Credits" section, linking back to this repository. Your support helps others discover and benefit from this open-source project.
 
 ## Contact
 
