@@ -14,7 +14,7 @@ A responsive portfolio website template that you can use to showcase your skills
 - [Example Portfolios](#example-portfolios)
 - [Contributing](#contributing)
 - [License](#license)
-- [Attribution](#attribution)
+- [Attribution](#attribution (appreciated, but not required))
 - [Contact](#contact)
 
 ## About the Project
