@@ -605,7 +605,7 @@ footer{
 /* wrapper on home page looks better with this @media */
 @media screen and (max-width: 750px){
     .wrapper{
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px 0px;
     }
 
