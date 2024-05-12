@@ -27,7 +27,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;  
-    background-image: linear-gradient(135deg, rgb(250, 113, 283)0%, rgb(255, 142, 134)60%);
+    background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -87,7 +87,7 @@ body {
 }
 
 .colorful-letter{
-    background-image: linear-gradient(135deg, rgb(0, 0, 51)0%, rgb(153, 204, 255)60%);
+    background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
