@@ -95,7 +95,7 @@ body {
 
 /* Background colors */
 .baby-pink{
-    background-color: rgba(253, 129, 187, 0.3);
+    background-color: rgba(0, 0, 51, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 0px;
@@ -105,7 +105,7 @@ body {
 }
 
 .baby-pink-light{
-    background-color: rgba(243, 162, 200, 0.3);
+    background-color: rgba(153, 204, 255, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 0px;
