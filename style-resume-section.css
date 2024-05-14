@@ -1,0 +1,32 @@
+#resume {
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        div {
+            position: relative;
+            margin-left: 30px;
+        }
+    }
+}
+
+.resume-image {
+    object-fit: cover;
+    object-position: 50% 0%;
+    width: 32vw;
+    height: 20vh;
+}
+
+.download-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    cursor: pointer;
+    color: rgb(140, 140, 140);
+    &:hover {
+        color: var(--interact-color);
+        background-color: rgba(0, 0, 0, 0.137);
+        border-radius: 5px;
+    }
+}

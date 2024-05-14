@@ -1,0 +1,11 @@
+.experience-container {
+    display: grid;
+    grid-template-rows: 1fr 300px 1fr;
+    grid-template-columns: auto auto auto auto;
+}
+
+.experience-item {
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+}
