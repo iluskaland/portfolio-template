@@ -1,5 +1,11 @@
 let excalimation = true
 
+const calculateResumePostion = () => {
+    const resumeComponent = $(".resume-image");
+    const offsetDiff = (window.pageYOffset + window.innerHeight) - resumeComponent.offset().top - 2* resumeComponent.innerHeight()
+    const yOffset = Math.min(Math.max(0, offsetDiff), resumeComponent.innerHeight())
+    resumeComponent.css("object-position", `50% ${yOffset / resumeComponent.innerHeight() * 100}%`)
+}
 
 $(document).ready(function () {
 
@@ -20,13 +26,11 @@ $(document).ready(function () {
 
 
     // Handle resume effect
-    const yOffset = window.pageYOffset
-    $(".resume-image").css("object-position", `50% ${yOffset/window.innerHeight*100}%`)
+    calculateResumePostion()
     window.addEventListener('scroll', () => {
 
         // Handle resume scroll
-        const yOffset = window.pageYOffset
-        $(".resume-image").css("object-position", `50% ${yOffset/window.innerHeight*100}%`)
+        calculateResumePostion()
 
         // Handle dots change
 
