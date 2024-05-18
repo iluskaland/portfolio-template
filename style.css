@@ -1,7 +1,11 @@
 :root {
-    --primary-color: rgba(81, 81, 81, 0.3);
-    --accent-color: rgb(165, 165, 165);
-    --nav-hover-color: rgba(255, 255, 255);
+    --primary-color: #D2C4C4;
+    --primary-logo: #8A737D;
+    --accent-color: #9F9A7F;
+    --text-black: #33312E;
+    --text-head: #8A737D;
+    --text-sub: #D2B0A2;
+    --text-normal: #33312E;
     --interact-color: white;
 }
 
@@ -14,6 +18,10 @@ html {
     /* Firefox supports only the android version and safari supports only the ios version at the moment according to MDN (2023)*/
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+}
+
+p {
+    color: var(--text-normal)
 }
 
 
@@ -36,7 +44,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;
-    color: #FFF;
+    color: var(--text-head);
     /* background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%); */
     /* background-clip: text; */
     /* -webkit-background-clip: text;
@@ -51,6 +59,7 @@ body {
     font-size: 4rem;
     letter-spacing: 4px;
     margin: 0px;
+    color: var(--text-black);
 }
 
 .medium-spacing-halfsize {
@@ -59,6 +68,7 @@ body {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 2rem;
     letter-spacing: 4px;
+    color: var(--text-black);
     margin: 0px;
 }
 
@@ -66,12 +76,14 @@ body {
     font-weight: normal;
     line-height: normal;
     font-size: 3rem;
+    color: var(--text-black);
 }
 
 .main-title {
     font-weight: normal;
     line-height: normal;
     font-size: 1.5rem;
+    color: var(--text-black);
 }
 
 .small {

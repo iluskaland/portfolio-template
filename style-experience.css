@@ -31,9 +31,9 @@
     /* pointer-events: none; */
     transform-style: preserve-3d;
     transition: translate 1s;
-    translate: calc(min(var(--c), 1) * 50%) 0%;
+    translate: calc(min(var(--c), 1) * 10%) 0%;
     /* Incline on the X axis for pages preview */
-    rotate: 1 0 0 30deg;
+    rotate: 1 1 0 15deg;
 }
 
 .page {
