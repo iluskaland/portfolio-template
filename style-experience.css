@@ -1,4 +1,4 @@
-.experience-container {
+/* .experience-container {
     display: grid;
     grid-template-rows: 1fr 300px 1fr;
     grid-template-columns: auto auto auto auto;
@@ -8,4 +8,151 @@
     background-color: orange;
     height: 200px;
     width: 200px;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.experience-container {
+    /* or any other parent wrapper */
+    padding: 100px;
+    width: 100%;
+    perspective: 1000px;
+    overflow: scroll;
+    color: hsla(180, 68%, 5%, 0);
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(189, 21%, 88%, 0) 30%, hsla(150, 20%, 94%, 0) 100%);
+}
+
+.book {
+    margin: auto;
+    width: 40cqmin;
+    /*1* let pointer event go trough pages of lower Z than .book */
+    /* pointer-events: none; */
+    transform-style: preserve-3d;
+    transition: translate 1s;
+    translate: calc(min(var(--c), 1) * 50%) 0%;
+    /* Incline on the X axis for pages preview */
+    rotate: 1 0 0 30deg;
+}
+
+.page {
+    /* PS: Don't go below thickness 0.5 or the pages might transpare */
+    --thickness: 4;
+    flex: none;
+    display: flex;
+    font-size: 2cqmin;
+    /*1* allow pointer events on pages */
+    pointer-events: all;
+    user-select: none;
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    transition:
+        transform 1s,
+        rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+    translate: calc(var(--i) * -100%) 0px 0px;
+    transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin)));
+    rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+}
+
+.front,
+.back {
+    position: relative;
+    flex: none;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: #fff;
+    /* Fix backface visibility Firefox: */
+    translate: 0px;
+}
+
+.back {
+    translate: -100% 0;
+    rotate: 0 1 0 180deg;
+}
+
+
+/* That's it. Your FlipBook customization styles: */
+
+.book {
+    counter-reset: page -1;
+
+    & a {
+        color: inherit;
+    }
+}
+
+.page {
+    box-shadow: 0em .5em 1em -.2em #00000020;
+}
+
+.front,
+.back {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 2em;
+    border: 1px solid #0002;
+
+    &:has(img) {
+        padding: 0;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: 1em;
+        counter-increment: page;
+        content: counter(page) ".";
+        font-size: 0.8em;
+    }
+}
+
+.cover {
+    &::after {
+        content: "";
+    }
+}
+
+.front {
+    &::after {
+        right: 1em;
+    }
+
+    background: linear-gradient(to left, #f7f7f7 80%, #eee 100%);
+    border-radius: 0.1em 0.5em 0.5em 0.1em;
+}
+
+.back {
+    &::after {
+        left: 1em;
+    }
+
+    background-image: linear-gradient(to right, #f7f7f7 80%, #eee 100%);
+    border-radius: 0.5em 0.1em 0.1em 0.5em;
+}
+
+.cover {
+    color: hsl(200 30% 98%);
+}
+
+.cover-1 {
+    background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+        hsl(231, 32%, 29%) url("./assets/project3.png") 50% / cover;
+}
+
+.cover-2 {
+    background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+        hsl(231, 32%, 29%) url("./assets/project2.png") 50% / cover;
+}
+
+.cover-3 {
+    background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+        hsl(231, 32%, 29%) url("./assets/project1.png") 50% / cover;
 }
