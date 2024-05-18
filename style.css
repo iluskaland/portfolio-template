@@ -1,5 +1,16 @@
+:root {
+    --primary-color: #D2C4C4;
+    --primary-logo: #8A737D;
+    --accent-color: #9F9A7F;
+    --text-black: #33312E;
+    --text-head: #8A737D;
+    --text-sub: #D2B0A2;
+    --text-normal: #33312E;
+    --interact-color: white;
+}
+
 /* BODY */
-html{
+html {
     font-size: 100%;
     line-height: 1.2rem;
     /* text-size adjust is to maintain the text-size even when the users rotates their phone to landscape view */
@@ -9,16 +20,22 @@ html{
     -ms-text-size-adjust: 100%;
 }
 
+p {
+    color: var(--text-normal)
+}
+
+
 body {
-    background-color: rgba(253, 244, 244, 30%);
+    background-color: var(--primary-color);
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0px;
 }
+
 /*-------------------------------------------*/
 
 /* GENERAL */
 /* Fonts */
-.large{
+.large {
     font-weight: normal;
     line-height: normal;
     font-family: 'Oswald', Arial, sans-serif;
@@ -26,67 +43,72 @@ body {
     letter-spacing: 4px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0px;  
-    background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    color: var(--text-head);
+    /* background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%); */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     word-wrap: break-word;
 }
 
-.medium-spacing{
+.medium-spacing {
     font-weight: normal;
     line-height: normal;
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 4rem;
     letter-spacing: 4px;
     margin: 0px;
+    color: var(--text-black);
 }
 
-.medium-spacing-halfsize{
+.medium-spacing-halfsize {
     font-weight: normal;
     line-height: normal;
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 2rem;
     letter-spacing: 4px;
+    color: var(--text-black);
     margin: 0px;
 }
 
-.main-title-large{
+.main-title-large {
     font-weight: normal;
     line-height: normal;
     font-size: 3rem;
+    color: var(--text-black);
 }
 
-.main-title{
+.main-title {
     font-weight: normal;
     line-height: normal;
     font-size: 1.5rem;
+    color: var(--text-black);
 }
 
-.small{
+.small {
     font-weight: normal;
     font-size: 0.7rem;
 }
 
-.quote{
+.quote {
     font-family: 'Covered By Your Grace', cursive, sans-serif;
     font-size: 1.5em;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.colorful-letter{
+.colorful-letter {
     background-image: linear-gradient(135deg, rgb(153, 204, 255)0%, rgb(0, 0, 51)60%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -94,7 +116,7 @@ body {
 }
 
 /* Background colors */
-.baby-pink{
+.baby-pink {
     background-color: rgba(0, 0, 51, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -104,7 +126,7 @@ body {
     padding-right: 20px;
 }
 
-.baby-pink-light{
+.baby-pink-light {
     background-color: rgba(153, 204, 255, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -116,7 +138,7 @@ body {
 
 /* Setting alignments and sizing */
 /* for the flexbox */
-.wrapper{
+.wrapper {
     max-width: 900px;
     margin: auto;
     padding: 20px;
@@ -124,94 +146,94 @@ body {
     gap: 20px 20px;
 }
 
-.column{
+.column {
     flex: 50%;
 }
 
-.w-900{
+.w-900 {
     max-width: 900px;
     margin: auto;
 }
 
 /* for the grid system */
-.grid-system-2{
+.grid-system-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.grid-system-4{
+.grid-system-4 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
 
 /* other */
-.max-width{
+.max-width {
     max-width: 450px;
 }
 
-.max-height{
+.max-height {
     max-height: 350px;
 }
 
-.align-center{
+.align-center {
     align-self: center;
 }
 
-.justify-content{
+.justify-content {
     justify-content: right;
 }
 
-.justify{
+.justify {
     text-align: justify;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.padding{
+.padding {
     padding: 20px;
 }
 
-.padding-top{
+.padding-top {
     padding-top: 20px;
 }
 
-.padding-right{
+.padding-right {
     padding-right: 20px;
 }
 
-.padding-bottom{
+.padding-bottom {
     padding-bottom: 20px;
 }
 
-.padding-left{
+.padding-left {
     padding-left: 20px;
 }
 
-.margin-auto{
+.margin-auto {
     margin: auto;
 }
 
-.margin-trbl10{
+.margin-trbl10 {
     margin: 10px;
 }
 
 /* for sticky bottom button */
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
 }
 
-.bottom{
+.bottom {
     align-self: flex-start;
     margin-top: auto;
 }
 
 /* Miscellaneous */
-.button{
+.button {
     background-color: rgba(253, 129, 187, 0.3);
     padding: 10px;
     text-decoration: none;
@@ -220,39 +242,41 @@ body {
 }
 
 /* I only used button-outline on this project, but you may like the other one more */
-.button-outline{
-    border: 2px solid  rgba(253, 129, 187, 0.3);
+.button-outline {
+    border: 2px solid rgba(253, 129, 187, 0.3);
     padding: 10px;
     text-decoration: none;
     border-radius: 5%;
     color: black;
 }
 
-.link{
+.link {
     text-decoration: none;
 }
 
 /* I had to double this code, because of the :hover and :active on link above */
-.link-no-scale{
+.link-no-scale {
     text-decoration: none;
 }
 
-.no-padding-list-item{
+.no-padding-list-item {
     padding-left: 0;
 }
 
-.padding-list-10{
+.padding-list-10 {
     padding: 10px;
 }
 
-.no-bullet-list{
+.no-bullet-list {
     list-style-type: none;
 }
+
 /* ---------------------------------- */
 
 /* ANIMATIONS AND OTHER BEAUTIES */
-.button-outline:hover, .button-outline:active{
-    border: 2px solid  rgba(253, 129, 187, 0.3);
+.button-outline:hover,
+.button-outline:active {
+    border: 2px solid rgba(253, 129, 187, 0.3);
     background-color: rgba(253, 129, 187, 0.6);
     padding: 10px;
     text-decoration: none;
@@ -261,7 +285,8 @@ body {
     transition: background-color 1s ease, color 1s ease;
 }
 
-.link:hover, .link:active{
+.link:hover,
+.link:active {
     font-size: 1.2rem;
     transform: scale(1.5);
     transition: 1s ease-in-out;
@@ -270,7 +295,8 @@ body {
     transition: font-size 2s ease-in-out;  */
 }
 
-.progress-bar:hover, .progress-bar:active {
+.progress-bar:hover,
+.progress-bar:active {
     box-shadow: 5px 5px 5px #cdadcd;
     transition: box-shadow 1s ease;
 }
@@ -282,8 +308,8 @@ nav {
     margin-bottom: 30px;
 }
 
-.main-nav{
-    background-color: rgb(253, 249, 249);
+.main-nav {
+    background-color: var(--accent-color);
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -301,24 +327,27 @@ nav {
 }
 
 .main-nav li a:hover {
-    color: rgb(254, 175, 210);
+    color: var(--nav-hover-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 .sticky {
-    position: -webkit-sticky; /* for Safari */
+    position: -webkit-sticky;
+    /* for Safari */
     position: sticky;
     top: 0;
-    align-self: flex-start; /* <-- this is the fix */
+    align-self: flex-start;
+    /* <-- this is the fix */
 }
 
 /* Nav-icon */
-.toggle, #drop{
+.toggle,
+#drop {
     display: none;
 }
 
-#main-toggle{
+#main-toggle {
     border: 1px solid #df36854d;
     float: right;
     padding: 20px;
@@ -326,7 +355,7 @@ nav {
     user-select: none;
 }
 
-.nav-icon{
+.nav-icon {
     background-color: #df36854d;
     display: block;
     height: 3px;
@@ -335,7 +364,7 @@ nav {
 }
 
 .nav-icon::before,
-.nav-icon::after{
+.nav-icon::after {
     background-color: #df36854d;
     content: "";
     display: block;
@@ -344,27 +373,30 @@ nav {
     position: absolute;
 }
 
-.nav-icon::before{
+.nav-icon::before {
     top: 5px;
 }
 
-.nav-icon::after{
+.nav-icon::after {
     top: -5px;
 }
+
 /* ---------------------------------- */
 
 /* FOOTER */
-footer{
+footer {
     color: #000000;
     text-align: center;
     padding: 20px 0px;
 }
+
 /* ---------------------------------- */
 
 /* INTRODUCTION */
-.header-img{
+.header-img {
     border-radius: 70%;
 }
+
 /* ---------------------------------- */
 
 /* ARTICLE */
@@ -441,6 +473,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 90%;
     }
@@ -450,6 +483,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 75%;
     }
@@ -459,6 +493,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 63%;
     }
@@ -468,6 +503,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 54%;
     }
@@ -477,6 +513,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 90%;
     }
@@ -486,6 +523,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 85%;
     }
@@ -495,6 +533,7 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 82%;
     }
@@ -504,35 +543,39 @@ footer{
     0% {
         width: 0%;
     }
+
     100% {
         width: 75%;
     }
 }
+
 /* ---------------------------------- */
 
 /* PROJECTS */
 /* I also used these card settings on other sub-pages */
-.card{
-    box-shadow: 0 3px 10px rgb(127 110 187 / 0.2); 
+.card {
+    box-shadow: 0 3px 10px rgb(127 110 187 / 0.2);
     padding: 20px;
 }
 
-.box{
+.box {
     display: block;
     width: 100px;
 }
+
 /* ---------------------------------- */
 
 /* CONTACT ME */
-.box-contact{
+.box-contact {
     display: block;
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
 
-.logo{
+.logo {
     width: 50px;
 }
+
 /* ---------------------------------- */
 
 /* SPECIAL THANKS */
@@ -541,140 +584,140 @@ footer{
 
 /* RESPONSIVENESS */
 /* Had to pay attention for that wondow.innerWidth when calculated max-width */
-@media screen and (max-width: 867px){
-    body{
+@media screen and (max-width: 867px) {
+    body {
         font-size: 90%;
     }
 
-    .grid-system-2{
+    .grid-system-2 {
         grid-template-columns: 1fr;
     }
 
-    .large{
+    .large {
         font-size: 4rem;
     }
 
-    .medium-spacing{
+    .medium-spacing {
         font-size: 2.5rem;
     }
 
-    .main-title-large{
+    .main-title-large {
         font-size: 2rem;
-        text-align: center;  
-        margin: 0;
-    }
-
-    .main-title{
         text-align: center;
         margin: 0;
     }
 
-    .small{
+    .main-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .small {
         font-size: 0.6rem;
     }
 
-    .max-width{
+    .max-width {
         max-width: 300px
     }
 
-    .max-height{
+    .max-height {
         max-height: 250px;
     }
 
-    .padding-top{
+    .padding-top {
         padding-top: 10px;
     }
-    
-    .padding-right{
+
+    .padding-right {
         padding-right: 10px;
     }
 
-    .padding-bottom{
+    .padding-bottom {
         padding-bottom: 10px;
     }
-    
-    .padding-left{
+
+    .padding-left {
         padding-left: 10px;
     }
 
-    .logo{
+    .logo {
         width: 40px;
     }
 }
 
 /* wrapper on home page looks better with this @media */
-@media screen and (max-width: 750px){
-    .wrapper{
+@media screen and (max-width: 750px) {
+    .wrapper {
         flex-direction: column;
         gap: 20px 0px;
     }
 
-    .column{
+    .column {
         flex: 100%;
     }
 
-    .box{
+    .box {
         margin: auto;
     }
 
-    .thanks{
+    .thanks {
         text-align: center;
     }
 }
 
 /* media query for hamburger menu with dropdown */
-@media screen and (max-width: 510px){
-    .main-nav{
+@media screen and (max-width: 510px) {
+    .main-nav {
         display: none;
     }
 
-    .toggle{
+    .toggle {
         display: block;
         background-color: #ffffff;
         border: 1px solid #fd81bb4d;
     }
-    
-    .toggle:hover{
+
+    .toggle:hover {
         background-color: #f0e7e7;
     }
-    
-    #drop:checked+.main-nav{
+
+    #drop:checked+.main-nav {
         display: block;
     }
 
-    nav{
+    nav {
         padding-bottom: 25px;
     }
 
-    .max-width{
+    .max-width {
         max-width: 100%;
     }
 }
 
 /* media query for smaller screens */
 /* smaller fonts were my way to go */
-@media screen and (max-width: 377px){
-    body{
+@media screen and (max-width: 377px) {
+    body {
         line-height: 1.5rem;
     }
 
-    .large{
+    .large {
         font-size: 3rem;
     }
 
-    .medium-spacing{
+    .medium-spacing {
         font-size: 1.5rem;
     }
 
-    .medium-spacing-halfsize{
+    .medium-spacing-halfsize {
         font-size: 1.5rem;
     }
 
-    .main-title{
+    .main-title {
         font-size: 1rem;
     }
 
-    .main-title-large{
+    .main-title-large {
         font-size: 1.5rem;
     }
 }
