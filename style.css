@@ -678,3 +678,77 @@ footer{
         font-size: 1.5rem;
     }
 }
+
+/* DARK THEME */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgba(45, 45, 45, 1);
+        color: white;
+    }
+
+    .baby-pink {
+        background-color: rgb(243, 162, 200);
+    }
+
+    .baby-pink-light {
+        background-color: rgba(45, 45, 45, 1);
+        border: 2px solid rgb(243, 162, 200);
+    }
+
+    .main-nav {
+        background-color: rgba(45, 45, 45, 1);
+    }
+
+    .main-nav li a {
+        color: white;
+    }
+
+    .main-nav li a:hover {
+        color: rgb(254, 175, 210);
+    }
+
+    #main-toggle{
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background-color: rgba(45, 45, 45, 1);
+    }
+    
+    .nav-icon{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .nav-icon::before,
+    .nav-icon::after{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .button-outline{
+        border: 2px solid rgb(254, 175, 210);
+        color: white;
+    }
+
+    .button-outline:hover, .button-outline:active{
+        border: 2px solid rgb(254, 175, 210);
+        background-color: rgb(254, 175, 210);
+    }
+
+    .card{
+        box-shadow: 0 0px 0px; 
+        border: 2px solid rgb(254, 175, 210);
+    }
+
+    .logo{
+        background-color: white;
+        padding: 2px;
+        border-radius: 4px;
+    }
+
+    .hobbies{
+        background-color: white;
+        border-radius: 100%;
+        padding: 10px;
+    }
+
+    footer{
+        color: white;
+    }
+}
