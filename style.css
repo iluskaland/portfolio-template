@@ -693,6 +693,8 @@ footer{
     .baby-pink-light {
         background-color: rgba(45, 45, 45, 1);
         border: 2px solid rgb(243, 162, 200);
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .main-nav {
