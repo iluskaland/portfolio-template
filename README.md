@@ -54,7 +54,7 @@ Customize this template by modifying the HTML and CSS files to match your person
 
 Now featuring dark mode support! The portfolio website automatically adapts to your system's color scheme preference.
 
-![Dark Mode Support](/assets/github-portfolio-template-demo-dark.PNG)
+![Dark Mode Support](/assets/github-portfolio-template-demo-dark.png)
 
 ## Example Portfolios
 
