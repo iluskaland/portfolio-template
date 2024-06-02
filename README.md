@@ -50,6 +50,12 @@ To view the live demonstration of this portfolio template, visit [this link](htt
 
 Customize this template by modifying the HTML and CSS files to match your personal information, skills, and projects. You can change the colors, fonts, and layout to create a unique portfolio.
 
+## Dark Mode Support
+
+Now featuring dark mode support! The portfolio website automatically adapts to your system's color scheme preference.
+
+![Dark Mode Support](/assets/github-portfolio-template-demo-dark.PNG)
+
 ## Example Portfolios
 
 Check out this portfolio created using this template:
