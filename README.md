@@ -62,6 +62,8 @@ Check out this portfolio created using this template:
 
 1. [iluskaland-portfolio](https://iluskaland-portfolio.netlify.app/) - A showcase of what you can achieve with this template.
 
+*I intentionally did not enable the dark preference on my website, because I prefer the light mode.*
+
 ## Contributing
 
 I welcome contributions from the open-source community to improve and enhance this project. Whether you're a developer, designer, or someone with new ideas, your contributions are valuable. Here are some guidelines to get you started:
