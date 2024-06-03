@@ -69,7 +69,7 @@ $(document).ready(function () {
         excalimation = !excalimation
     }, 500)
 
-    // handleExperienceScroll()
+    handleExperienceScroll()
 
 
     // Handle resume effect

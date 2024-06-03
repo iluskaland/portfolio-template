@@ -19,6 +19,7 @@
     padding: 70px;
     width: 100%;
     perspective: 1500px;
+    display: flex;
     overflow: scroll;
     color: hsla(180, 68%, 5%, 0);
     background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(189, 21%, 88%, 0) 30%, hsla(150, 20%, 94%, 0) 100%);
@@ -164,5 +165,5 @@
 }
 
 .experience-img {
-    
+
 }

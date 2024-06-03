@@ -177,6 +177,7 @@ body {
     margin: auto;
     padding: 20px;
     display: flex;
+    align-items: center;
     gap: 20px 20px;
 }
 
