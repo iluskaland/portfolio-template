@@ -1,0 +1,1 @@
+const NOTION_LINK = "https://www.notion.so/Proof-of-Work-c9ff74954dad43108673ee83a1829522?pvs=4";

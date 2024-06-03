@@ -1,12 +1,25 @@
 :root {
-    --primary-color: #D2C4C4;
-    --primary-logo: #8A737D;
-    --accent-color: #9F9A7F;
+    --some-good-dark-color: #8A737D;
+    --lighter-shade-of-that: #D2C4C4;
+    --accent-of-that-color: #9F9A7F;
+
+
+    --primary-color: var(--lighter-shade-of-that);
+    --primary-logo: var(--some-good-dark-color);
+    --accent-color: var(--accent-of-that-color);
     --text-black: #33312E;
-    --text-head: #8A737D;
-    --text-sub: #D2B0A2;
+    --text-white: #EEEEEE;
+    --text-head: var(--some-good-dark-color);
+    --text-sub: var(--lighter-shade-of-that);
     --text-normal: #33312E;
     --interact-color: white;
+
+    --header-background: var( --some-good-dark-color);
+    --header-text: #EEEEEE;
+    --header-text-hover: white;
+
+    --timeline-background-color: #8A737D;
+
 }
 
 /* BODY */
@@ -22,6 +35,17 @@ html {
 
 p {
     color: var(--text-normal)
+}
+
+/* .about p {
+    text-align: right;
+}  */
+
+.snap-scroll {
+    scrollbar-width: none; /* pour Firefox */
+    -ms-overflow-style: none;  /* pour Internet Explorer 10+ */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Pour le support de snap */
 }
 
 
@@ -68,6 +92,16 @@ body {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 2rem;
     letter-spacing: 4px;
+    color: var(--text-black);
+    margin: 0px;
+}
+
+.medium-spacing-small-size {
+    font-weight: normal;
+    line-height: normal;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     color: var(--text-black);
     margin: 0px;
 }
@@ -139,7 +173,7 @@ body {
 /* Setting alignments and sizing */
 /* for the flexbox */
 .wrapper {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     display: flex;
@@ -306,14 +340,15 @@ body {
 /* NAV */
 nav {
     margin-bottom: 30px;
+    box-shadow: 2px 2px 4px var(--header-background), -2px -2px 4px var(--header-background);
 }
 
 .main-nav {
-    background-color: var(--accent-color);
+    background-color: var(--header-background);
     display: flex;
     list-style-type: none;
-    justify-content: center;
-    padding: 20px;
+    justify-content: right;
+    padding: 20px 25%;
     margin: 0px;
 }
 
@@ -322,12 +357,12 @@ nav {
 }
 
 .main-nav li a {
-    color: #000000;
+    color: var(--header-text);
     text-decoration: none;
 }
 
 .main-nav li a:hover {
-    color: var(--nav-hover-color);
+    color: var(--header-text-hover);
     text-decoration: none;
     font-weight: bold;
 }

@@ -8,20 +8,20 @@ const calculateResumePostion = () => {
     resumeComponent.css("object-position", `50% ${yOffset / resumeComponent.innerHeight() * 100}%`)
 }
 
-const activateDot = (sectionId) => {
-    let section = $(`#${sectionId}`)
-    var hT = section.offset().top,
-        hH = section.outerHeight(),
-        wH = $(window).height(),
-        wS = $(window).scrollTop();
+// const activateDot = (sectionId) => {
+//     let section = $(`#${sectionId}`)
+//     var hT = section.offset().top,
+//         hH = section.outerHeight(),
+//         wH = $(window).height(),
+//         wS = $(window).scrollTop();
 
-    if ((wS + wH) > ((hT + hH)) && (wS < hT)) {
-        $('.active').removeClass('active');
-        $(`#dot-${sectionId}`).addClass('active');
-        return true;
-    }
-    return false
-}
+//     if ((wS + wH) > ((hT + hH)) && (wS < hT)) {
+//         $('.active').removeClass('active');
+//         $(`#dot-${sectionId}`).addClass('active');
+//         return true;
+//     }
+//     return false
+// }
 
 const handleExperienceScroll = () => {
     setInterval(() => {
@@ -37,22 +37,28 @@ const handleExperienceScroll = () => {
 
     $("#experience")
         .on('mouseenter', () => {
-            console.log("hello")
             $(this).removeClass("auto-horizontal-scroll");
         })
         .on('mouseleave', () => {
-            console.log("leave")
             $(this).addClass("auto-horizontal-scroll")
         });
+}
+
+const handleTimelineClick = () => {
+    $("#timeline").click(() => {
+        window.open(NOTION_LINK, '_blank').focus();
+    })
 }
 
 $(document).ready(function () {
 
     // Add Navigation
-    $('.dots li').click(function () {
-        $('.active').removeClass('active');
-        $(this).addClass('active');
-    });
+    // $('.dots li').click(function () {
+    //     $('.active').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+
+    handleTimelineClick();
 
     // Add exclaimation blink
     setInterval(() => {
@@ -63,24 +69,23 @@ $(document).ready(function () {
         excalimation = !excalimation
     }, 500)
 
-    handleExperienceScroll()
+    // handleExperienceScroll()
 
 
     // Handle resume effect
     calculateResumePostion()
     window.addEventListener('scroll', () => {
 
-        // Handle resume scroll
+    //     // Handle resume scroll
         calculateResumePostion()
 
-        // Handle dots change
-        activateDot("introduction") ||
-            activateDot("experience") ||
-            activateDot("projects") ||
-            activateDot("resume") ||
-            activateDot("recommendation")
+    //     // Handle dots change
+    //     activateDot("introduction") ||
+    //         activateDot("experience") ||
+    //         activateDot("projects") ||
+    //         activateDot("resume") ||
+    //         activateDot("recommendation")
     })
-
 
 
 });

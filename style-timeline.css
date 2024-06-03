@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.design-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-background);
+    min-height: 100vh;
+    padding: 100px 0;
+    font-family: Jost;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: var(--header-background);
+    -webkit-box-shadow: 5px 5px 10px var(--header-background), -5px -5px 10px var(--header-background);
+    box-shadow: 5px 5px 10px var(--header-background), -5px -5px 10px var(--header-background);
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 200;
+    p {
+        color: white;
+    }
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, var(--header-background), var(--header-background), var(--header-background));
+        width: 3px;
+        height: 100%;
+    }
+
+    .main-middle {
+        opacity: 0;
+    }
+
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, var(--header-background), var(--header-background), var(--header-background));
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

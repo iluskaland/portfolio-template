@@ -16,22 +16,22 @@
 
 .experience-container {
     /* or any other parent wrapper */
-    padding: 100px;
+    padding: 70px;
     width: 100%;
-    perspective: 1000px;
+    perspective: 1500px;
     overflow: scroll;
     color: hsla(180, 68%, 5%, 0);
     background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(189, 21%, 88%, 0) 30%, hsla(150, 20%, 94%, 0) 100%);
 }
 
 .book {
-    margin: auto;
+    /* margin: auto; */
     width: 40cqmin;
     /*1* let pointer event go trough pages of lower Z than .book */
     /* pointer-events: none; */
     transform-style: preserve-3d;
     transition: translate 1s;
-    translate: calc(min(var(--c), 1) * 10%) 0%;
+    translate: calc(min(var(--c), 1) * 20%) 0%;
     /* Incline on the X axis for pages preview */
     rotate: 1 1 0 15deg;
 }
@@ -92,7 +92,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
     border: 1px solid #0002;
 
     &:has(img) {
@@ -142,12 +142,12 @@
     color: hsl(200 30% 98%);
 }
 
-.cover-1 {
-    background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
-        hsl(231, 32%, 29%) url("./assets/project3.png") 50% / cover;
-}
+/* .cover-1 {
+    background: radial-gradient(circle farthest-corner at 100% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+        hsl(231, 32%, 29%) url("./assets/medium-1.png") 50% / cover;
+} */
 
-.cover-2 {
+/* .cover-2 {
     background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
         hsl(231, 32%, 29%) url("./assets/project2.png") 50% / cover;
 }
@@ -155,4 +155,14 @@
 .cover-3 {
     background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
         hsl(231, 32%, 29%) url("./assets/project1.png") 50% / cover;
+} */
+
+.experience-card {
+    width: 360px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.experience-img {
+    
 }

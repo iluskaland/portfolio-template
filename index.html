@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Review this part and modify it to your liking -->
     <meta name="description" content="Portfolio - Devika Ani">
-    <meta name="keywords" content="Portfolio - Devika Ani">
+    <meta name="keywords" content="Devika ">
     <meta name="author" content="Devika Ani">
     <title>Portfolio - Devika Anil </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="side-navigation-dots.css">
     <link rel="stylesheet" type="text/css" href="style-resume-section.css">
     <link rel="stylesheet" type="text/css" href="style-experience.css">
+    <link rel="stylesheet" type="text/css" href="style-about-me.css">
+    <link rel="stylesheet" type="text/css" href="style-testimonials.css">
+    <link rel="stylesheet" type="text/css" href="style-timeline.css">
     <!-- font for the quote -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,73 +34,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/content.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <script src="./js/animation.js"></script>
     <!-- navigation bar -->
-
-    <div class="dots-table">
-        <div class="dots-cell">
-            <ul class="dots">
-                <!-- <li class="active"><a href="#">About</a></li> -->
-                <li class="active" id="dot-introduction">
-                    <a href="#introduction">
-                        <div></div>
-                        <h4>About</h2>
-                    </a>
-                </li>
-                <li id="dot-experience">
-                    <a href="#experience">
-                        <div></div>
-                        <h4>Blog</h2>
-                    </a>
-                </li>
-                <li id="dot-projects">
-                    <a href="#projects">
-                        <div></div>
-                        <h4>Projects</h2>
-                    </a>
-                </li>
-                <li id="dot-resume">
-                    <a href="#resume">
-                        <div></div>
-                        <h4>Resume</h2>
-                    </a>
-                </li>
-                <li id="dot-recommendation">
-                    <a href="#recommendation">
-                        <div></div>
-                        <h4>Shout outs !</h2>
-                    </a>
-                </li>
-                <li id="dot-contact-me">
-                    <a href="#contact-me">
-                        <div></div>
-                        <h4>Contact me</h2>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- introduction -->
-    <!-- <header class="grid-system-2 w-900 padding">
-        <section class="align-center">
-            <h1 class="medium-spacing" id="exclaimation">Hi there</h1>
-            <h1 class="medium-spacing">I am</h1>
-            <h1 class="large">Devika Anil</h1>
-            <p class="justify">That large class above is only suitable for short names/nicknames. If you want to display
-                your full name there, consider using the "medium-spacing" and "colorful-letter" classes instead, to
-                maintain responsiveness.</p>-->
-        <!-- </section>
-        <section class="center align-center">
-            <img class="header-img max-width max-height" src="assets/profile-pic.png" alt="profile-picture">
-        </section>
-    </header> -->
+    <nav class="sticky nav">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+    </nav>
 
 
     <!-- quote 
@@ -106,69 +62,206 @@
         <p>And unfold it here a little.</p>
     </article> -->
 
-    <!-- about me -->
-    <!-- That about me png is something I've made for fun, it has a purple version too, feel free to use it or change it to anything else. -->
-    <section class="wrapper" id="introduction">
-        <!-- <section class="margin-auto">
+    <div class="snap-scroll">
+
+        <!-- about me -->
+        <!-- That about me png is something I've made for fun, it has a purple version too, feel free to use it or change it to anything else. -->
+        <section class="wrapper" id="introduction">
+            <!-- <section class="margin-auto">
             <img class="max-width max-height" src="assets/about-me.png" alt="about-me-logo">
         </section> -->
-        <section class="align-center">
-            <h1 class="medium-spacing" id="exclaimation">Hi there</h1>
-            <h1 class="medium-spacing">I am</h1>
-            <h1 class="large">Devika Anil</h1>
-            <!--<p class="justify">That large class above is only suitable for short names/nicknames. If you want to display
+            <section class="align-center">
+                <h1 class="medium-spacing" id="exclaimation">Hi there</h1>
+                <h1 class="medium-spacing">I am</h1>
+                <h1 class="large">Devika</h1>
+                <!--<p class="justify">That large class above is only suitable for short names/nicknames. If you want to display
                 your full name there, consider using the "medium-spacing" and "colorful-letter" classes instead, to
                 maintain responsiveness.</p>-->
+            </section>
+
+            <section class="justify align-center about">
+                <p>As a product manager, I try to use empathy and knowledge of human cognition to create
+                    products that improve lives. I also love teaching, making complex ideas simple and fun.
+                    If you're looking to create meaningful experiences, let's have a conversation.</p>
+                <!--<p class="padding-top"><a href="about-me.html" class="button-outline">More info</a></p> -->
+            </section>
         </section>
 
-        <section class="justify align-center">
-            <p>Thank you for stopping by! As a product manager, I harness empathy and a deep understanding of human
-                cognition to develop life-enhancing products. Also passionate about teaching kids, my approach to
-                product design mirrors creating meaningful experiences, always stepping out of my comfort zone to
-                innovate. In fast-paced startups, I’ve refined translating technical insights into practical strategies
-                that propel growth. I'm all about making complex concepts easy to understand and exciting for everyone
-                involved.</p>
-            <!--<p class="padding-top"><a href="about-me.html" class="button-outline">More info</a></p> -->
+        <section class="wrapper about-me" id="about-me">
+            <div class="what-i-do">
+                <div class="head medium-spacing-small-size">
+                    What I do
+                </div>
+
+                <p class="line">
+                    Unveil user needs
+                </p>
+                <p class="line">
+                    Translate complex ideas to <br>technical strategies
+                </p>
+                <p class="line">
+                    Embrace change and <br>build lean
+                </p>
+            </div>
+            <div class="what-i-use">
+                <div class="head medium-spacing-small-size">
+                    What I use
+                </div>
+                <p class="line">
+                    SQL/Sentry
+                </p>
+                <p class="line">
+                    Figma/Excalidraw
+                </p>
+                <p class="line">
+                    Jira
+                </p>
+            </div>
+            <div class="what-u-expect">
+                <div class="head medium-spacing-small-size">
+                    What can you expect
+                </div>
+                <p class="line">
+                    User-Centric Products
+                </p>
+                <p class="line">
+                    Clear Technical Direction
+                </p>
+                <p class="line">
+                    Transparent Communication
+                </p>
+                <p class="line">
+                    High-Quality Deliverables
+                </p>
+            </div>
         </section>
+
+        <section id="testimonials" class="wrapper">
+            <div class="body">
+                <p>
+                    "Don't go by the number of years Devika has worked, or even how young she is.
+                    She is extremely smart and detailed and the most easy to work with." - <a
+                        href="https://www.linkedin.com/in/antarasethia/" target="_blank"> Antara Sethia</a>
+                </p>
+                <p>
+                    “Rare combination of technical and entrepreneurial skillset.” – <a
+                        href="https://www.linkedin.com/in/hardik-bohra-bb42ab11a/" target="_blank"> Hardik Bohra</a>
+                </p>
+                <p>
+                    “Devika's openness with her time and resources so that i can understand the nuances of the space and
+                    domain
+                    to a broader audience is second to none.” – <a
+                        href="https://www.linkedin.com/in/anushclivefernandes/" target="_blank"> Anush Fernandes</a>
+                </p>
+                <p>
+                    “Does not bat an eyelid when she has to take a messy project head-on. Has become the backbone for
+                    the team when it comes to product understanding” – <a
+                        href="https://www.linkedin.com/in/karthikvemparala/" target="_blank"> Karthik Vemparala</a>
+                </p>
+            </div>
+            <h2 class="medium-spacing head">
+                What people think about me
+            </h2>
+        </section>
+
+        <section id="timeline" class="wrapper">
+            <h2 class="medium-spacing head">
+                My <br>journey <br>so far
+            </h2>
+            <div class="timeline">
+
+                <!--Well, The reason for this div is to fill space. 
+      This space is technically used for keeping dates, 
+      but I didn't find the need for dates. However, I'll provide 
+      you the styling for dates, so that you can use it if you 
+      wanted to.-->
+                <div class="timeline-empty">
+                </div>
+
+                <!--This is the class where the timeline graphics are 
+      housed in. Note that we have timeline-circle 
+      here for that pointer in timeline.-->
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>2019</h3>
+                    <p>Graduation Bachelors in Engineering - CSE</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>2020</h3>
+                    <p>Nuclei Software Developert</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>2021</h3>
+                    <p>Prepared for UPSC</p>
+                </div>
+
+                <div class="timeline-component timeline-content">
+                    <h3>2022</h3>
+                    <p>Sprinto Product Manager</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+            </div>
+    </div>
+    </section>
     </section>
 
     <section id="experience" class="wrapper experience-container auto-horizontal-scroll">
         <div class="book">
-            <div class="page">
-                <div class="front cover cover-1">
+            <div>
+                <iframe class="experience-card"
+                    src="https://www.youtube.com/embed/BWnWS8HxUx4?si=FnnpnX2VXkeJwomr" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <div class="front cover cover-1">
                     <h1 class="medium-spacing-halfsize">Experience</h1>
                     <p>Some short<br>description</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="book">
-            <div class="page">
-                <div class="front cover cover-2">
-                    <h1 class="medium-spacing-halfsize">Experience</h1>
-                    <p>Some short<br>description</p>
-                </div>
+            <div>
+                <iframe class="experience-card"
+                    src="https://www.youtube.com/embed/RC_lWZVm-xU?si=9ZIhPZWsW75BRHJl" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div class="book">
-            <div class="page">
-                <div class="front cover cover-3">
-                    <h1 class="medium-spacing-halfsize">Experience</h1>
-                    <p>Some short<br>description</p>
-                </div>
+            <div>
+                <iframe class="experience-card"
+                    src="https://www.youtube.com/embed/SWrMtZE0ras?si=sn_a5bzs1VvSyouC" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div class="book">
-            <div class="page">
-                <div class="front cover cover-3">
-                    <h1 class="medium-spacing-halfsize">Experience</h1>
-                    <p>Some short<br>description</p>
-                </div>
-            </div>
+            <a target="_blank"
+                href="https://medium.com/@dev-ika/how-mindful-engagement-makes-language-your-articulation-powerhouse-c05e5cc548d6">
+                <img class="experience-card" src="./assets/medium-1.png" />
+            </a>
         </div>
-    </section>
-
-    <section id="projects" class="wrapper">
-        <h2 class="large">Projects qaijehufig aiosdbfi adhbfaishdbb oiahsdbfihasbd foihasbdfioahsbd fpiahsbf ahsdbf oaisdbf o</h2>
     </section>
 
     <section id="resume" class="wrapper">
@@ -220,7 +313,8 @@
     <!-- Here you can see the free resources I've used for the logos and illustrations. Do not forget to give credit to the creators of the free stuffs use may use additionally -->
     <section>
         <p class="small thanks justify w-900 padding-left">*Thanks for the illustration:
-            <a class="link colorful-letter" href="https://storyset.com/work" target="_blank">work illustrations</a> by
+            <a class="link colorful-letter" href="https://storyset.com/work" target="_blank">work illustrations</a>
+            by
             Storyset
 
         </p>
@@ -231,13 +325,16 @@
                     awesome, </a></span>
             <span><a class="link colorful-letter" href="https://www.iconfinder.com/fluent-designsystem"
                     target="_blank">microsoft, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Chanut-is" target="_blank">chanut is
+            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Chanut-is" target="_blank">chanut
+                    is
                     indurstries, </a></span>
             <span><a class="link colorful-letter" href="https://www.iconfinder.com/Kalashnyk" target="_blank">kalash
                 </a></span>
             on Iconfinder
         </p>
     </section>
+
+    </div>
 
     <!-- footer -->
     <!-- waits for you to take over! -->

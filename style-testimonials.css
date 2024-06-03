@@ -1,0 +1,15 @@
+#testimonials {
+    .head {
+        text-align: right;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        p {
+            text-align: left;
+        }
+    }
+}
