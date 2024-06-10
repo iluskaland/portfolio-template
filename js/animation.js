@@ -3,7 +3,7 @@ let experienceScrollDirection = 1
 
 const calculateResumePostion = () => {
     const resumeComponent = $(".resume-image");
-    const offsetDiff = (window.pageYOffset + window.innerHeight) - resumeComponent.offset().top - 2 * resumeComponent.innerHeight()
+    const offsetDiff = (window.pageYOffset + window.innerHeight) - resumeComponent.offset().top - 2.7 * resumeComponent.innerHeight()
     const yOffset = Math.min(Math.max(0, offsetDiff), resumeComponent.innerHeight())
     resumeComponent.css("object-position", `50% ${yOffset / resumeComponent.innerHeight() * 100}%`)
 }
@@ -28,20 +28,21 @@ const handleExperienceScroll = () => {
         let element = $(".auto-horizontal-scroll");
         let maxScroll = element[0].scrollWidth - element.outerWidth();
         if (element.scrollLeft() === maxScroll) {
-            experienceScrollDirection = -1;
-        } else if (element.scrollLeft() == 0) {
-            experienceScrollDirection = 1;
+            console.log("asasmax", element.scrollLeft(), experienceScrollDirection, maxScroll)
+            element.animate({scrollLeft: $(element).offset().left - 200}, 2000);
+        } else if (element.scrollLeft() === 0) {
+            console.log("asas0", element.scrollLeft(), experienceScrollDirection, maxScroll)
+            element.animate({scrollLeft: $(element).offset().left + 200}, 5000);
         }
-        element.scrollLeft(element.scrollLeft() + experienceScrollDirection * 0.5, 0);
-    }, 30);
+    }, 100);
 
-    $("#experience")
-        .on('mouseenter', () => {
-            $(this).removeClass("auto-horizontal-scroll");
-        })
-        .on('mouseleave', () => {
-            $(this).addClass("auto-horizontal-scroll")
-        });
+    // $("#experience")
+    //     .on('mouseenter', () => {
+    //         $(this).removeClass("auto-horizontal-scroll");
+    //     })
+    //     .on('mouseleave', () => {
+    //         $(this).addClass("auto-horizontal-scroll")
+    //     });
 }
 
 const handleTimelineClick = () => {
@@ -69,7 +70,7 @@ $(document).ready(function () {
         excalimation = !excalimation
     }, 500)
 
-    handleExperienceScroll()
+    // handleExperienceScroll()
 
 
     // Handle resume effect

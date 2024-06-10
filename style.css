@@ -14,7 +14,7 @@
     --text-normal: #33312E;
     --interact-color: white;
 
-    --header-background: var( --some-good-dark-color);
+    --header-background: var(--some-good-dark-color);
     --header-text: #EEEEEE;
     --header-text-hover: white;
 
@@ -31,6 +31,12 @@ html {
     /* Firefox supports only the android version and safari supports only the ios version at the moment according to MDN (2023)*/
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    /* overflow: hidden; */
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 p {
@@ -41,18 +47,27 @@ p {
     text-align: right;
 }  */
 
-.snap-scroll {
-    scrollbar-width: none; /* pour Firefox */
-    -ms-overflow-style: none;  /* pour Internet Explorer 10+ */
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; /* Pour le support de snap */
-}
-
 
 body {
     background-color: var(--primary-color);
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0px;
+    /* overflow: hidden; */
+}
+
+
+/* Setting alignments and sizing */
+/* for the flexbox */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px 20px;
+    scroll-snap-align: center;
+    height: 100vh;
+    /* position: relative; */
 }
 
 /*-------------------------------------------*/
@@ -170,16 +185,6 @@ body {
     padding-right: 20px;
 }
 
-/* Setting alignments and sizing */
-/* for the flexbox */
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px 20px;
-}
 
 .column {
     flex: 50%;

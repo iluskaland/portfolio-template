@@ -14,6 +14,12 @@
     box-sizing: border-box;
 }
 
+#experience {
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
 .experience-container {
     /* or any other parent wrapper */
     padding: 70px;
@@ -52,7 +58,7 @@
         transform 1s,
         rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
     translate: calc(var(--i) * -100%) 0px 0px;
-    transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin)));
+    /* transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin))); */
     rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
 }
 
