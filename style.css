@@ -96,22 +96,16 @@ body {
 /* Background colors */
 .baby-pink{
     background-color: rgba(253, 129, 187, 0.3);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 0px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .baby-pink-light{
     background-color: rgba(243, 162, 200, 0.3);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 0px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 /* Setting alignments and sizing */
@@ -693,8 +687,6 @@ footer{
     .baby-pink-light {
         background-color: rgba(45, 45, 45, 1);
         border: 2px solid rgb(243, 162, 200);
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     .main-nav {
@@ -752,5 +744,12 @@ footer{
 
     footer{
         color: white;
+    }
+
+    @media screen and (max-width: 929px) {
+        .baby-pink-light {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 }
